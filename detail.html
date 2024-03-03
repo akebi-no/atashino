@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Akebino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="あけび">
+    <link rel="stylesheet" href="akebino.css">
+    <!--**google analytics入れる-->
+    <meta property="og:url" content="https://" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Akebino candy" />
+    <meta property="og:description" content=" ページの説明文" />
+    <meta property="og:site_name" content="Akebino candy" />
+    <meta property="og:image" content="サムネイル画像のURL" />
+    <style>
+
+        main{
+            height: 100vh;
+
+        }
+
+@media only screen and (max-width: 600px){
+
+
+body {
+        font-size: 10px;
+    }
+
+    button{
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: white;
+    color: purple;
+    border: 2px solid purple;
+     /* 外枠を紫に設定 */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+    box-shadow: none;
+  }
+
+  button:hover {
+    background-color: purple;
+    color: white;
+    border: 2px solid purple;
+
+   
+  }
+  
+  .product-container {
+    display: flex;
+    height: 200px;
+    padding: 20px;
+  }
+  
+  .image-slider {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-slider img {
+ width: 100%;
+  height: auto; /* 追加: アスペクト比を維持するために高さを自動計算 */
+  position: absolute; /* 追加: 絶対配置を有効にする */
+  top: 0; /* 追加: 上端に配置 */
+  left: 0; /* 追加: 左端に配置 */
+  opacity: 0; /* 画像を初めは非表示に */
+  transition: opacity 1.0s ease-in-out;
+  padding-top: 10px;
+  }
+  
+  .image-slider img.active {
+    opacity: 1; /* activeクラスがついた画像を表示 */
+  }
+  
+  .product-info {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+    </style>
+    
+    
+</head>
+<body class="" id="">
+    <div class="">
+        <header class="fs-l-header">
+                <div class="fs-l-header__contents contents">
+                <!--** &Mel2207_ヘッダーナビゲーション（フリーパーツ）↓↓ -->
+                  <nav class="contents">
+                    <ul>
+                      <li class="nav_text" ><a href="akebino.html" alt="TOP">トップページ</a></li>
+                      <li class="nav_text"><a href="akebino.html#concept-section" alt="CONCEPT">コンセプト</a></li>
+                      <li class="nav_text"><a href="q&a.html" alt="FAQ">よくあるご質問</a></li>
+                      <li class="nav_text"><a href="contact.html" alt="CONTACT">コンタクト</a></li>
+                    </ul>
+                </div>
+            </header>
+        <main>
+            <div class="product-container">
+                <div class="image-slider">
+                  <img src="images/shohin.JPG" alt="商品画像1">
+                  <img src="images/package.jpeg" alt="商品画像2">
+                </div>
+                <div class="product-info">
+                  <h2>あけび こはく糖(80g)</h2>
+                <p>￥1,980 (消費税/送料込み)</p><br>
+                <p class="red">こちらは予約商品です。<br>
+                2024/3/22以降順次発送させていただきます。</p><br>
+                  <button><a href="item.html">購入する</a> </button>
+                </div>
+              </div>
+              
+              <script src="akebino.script.js"></script> <!-- 外部スクリプトの読み込み -->
+            
+        </main>
+        <footer>
+            <div class="footer-contents">
+                <ul>
+                    <li>
+                        <a href="AboutTerms.html" title="特定商取引法に基づく表示">・特定商取引法に基づく表示
+                        </a>
+                    </li>
+                    <li>
+                        <a href="privacy-policy.html" title="プライバシーポリシー">・プライバシーポリシー</a>
+                    </li>
+                </ul>
+
+            </div>
+            <p class="copy">&copy;あたしのあけび</p>
+        </footer>
+
+    </div>
+</body>
+</html>
